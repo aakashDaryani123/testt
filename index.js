@@ -4,11 +4,17 @@ const app = express();
 require("dotenv").config();
 
 const scrapeLogic = async (res) => {
- const browser = await puppeteer.launch({
+const browser = await puppeteer.launch({
   headless: true,
-  executablePath: puppeteer.executablePath(), // now works because Chrome is installed
-  args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  executablePath: puppeteer.executablePath(),
+  args: [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--single-process",
+    "--no-zygote"
+  ]
 });
+
 
 
   try {

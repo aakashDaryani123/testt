@@ -9,10 +9,19 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "dotenv": "^17.1.0",
     "express": "^5.1.0",
     "puppeteer": "^24.12.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakashDaryani123/testt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aakashDaryani123/testt/issues"
+  },
+  "homepage": "https://github.com/aakashDaryani123/testt#readme",
+  "description": ""
 }

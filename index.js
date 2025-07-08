@@ -36,4 +36,5 @@ app.get("/", async (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log("starting1234....");
   console.log(process.env.NODE_ENV);
+  console.log(puppeteer.executablePath());
 });
